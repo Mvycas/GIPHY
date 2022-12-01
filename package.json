@@ -1,0 +1,34 @@
+{
+  "name": "giphy-browser",
+  "version": "1.0.0",
+  "description": "IBM Cloud native Internship Exercise.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js  --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mvycas/GIPHY-browser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "cross-fetch": "^3.1.5",
+    "dot-env": "^0.0.1",
+    "express": "^4.18.1",
+    "laravel-mix": "^6.0.49",
+    "laravel-mix-svelte": "^0.5.0",
+    "node-fetch": "^3.2.10",
+    "svelte": "^3.50.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "svelte-loader": "^3.1.3"
+  }
+}
